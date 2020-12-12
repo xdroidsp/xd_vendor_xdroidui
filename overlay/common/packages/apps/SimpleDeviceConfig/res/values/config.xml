@@ -51,6 +51,9 @@
         <!-- Contribute app shortcuts to centralized AppSearch index -->
         <item>systemui/shortcut_appsearch_integration=true</item>
 
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
