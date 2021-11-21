@@ -47,4 +47,5 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayActiveEdge \
     PixelFwResOverlay \
     GoogleConfigOverlay \
-    SystemUIGoogleOverlay
+    SystemUIGoogleOverlay \
+    CustomPixelLauncherOverlay
