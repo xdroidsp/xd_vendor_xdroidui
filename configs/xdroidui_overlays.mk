@@ -55,4 +55,5 @@ PRODUCT_PACKAGES += \
     GoogleConfigOverlay \
     SystemUIGoogleOverlay \
     CustomPixelLauncherOverlay \
-    XDSetupOverlay
+    XDSetupOverlay \
+    NavigationBarModeGesturalOverlayFS
