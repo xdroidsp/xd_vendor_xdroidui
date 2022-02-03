@@ -31,10 +31,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
