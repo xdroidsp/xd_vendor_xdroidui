@@ -27,5 +27,5 @@ include $(XDUI_PATH)/configs/xdroidui_packages.mk
 # xdroidUI Props
 include $(XDUI_PATH)/configs/xdroidui_props.mk
 
-# xdroidUI Ui
+# xdroidUI UI
 include $(XDUI_PATH)/configs/xdroidui_ui.mk

@@ -13,7 +13,38 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include package overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/xdroidui/overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/xdroidui/overlay/common/
+# Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(XDUI_PATH)/overlay
+
+PRODUCT_PACKAGE_OVERLAYS += \
+    $(XDUI_PATH)/overlay/common
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    FilesOverlay \
+    PixelDocumentsUIGoogleOverlay \
+    BuiltInPrintServiceOverlay \
+    GooglePermissionControllerOverlay \
+    PixelConfigOverlayCommon \
+    TeleServiceOverlay \
+    CaptivePortalLoginOverlay \
+    GoogleWebViewOverlay \
+    TelecomOverlay \
+    CellBroadcastServiceOverlay \
+    SettingsGoogleOverlay \
+    SettingsGoogleOverlayPixel2021 \
+    TelephonyProviderOverlay \
+    ContactsProviderOverlay \
+    PixelConfigOverlay2018 \
+    SettingsProviderOverlay \
+    TraceurOverlay \
+    PixelConfigOverlay2019 \
+    PixelConfigOverlay2019Midyear \
+    PixelConfigOverlay2021 \
+    PixelSetupWizardOverlay \
+    PixelSetupWizardOverlay2019 \
+    PixelSetupWizardOverlayActiveEdge \
+    PixelFwResOverlay \
+    GoogleConfigOverlay \
+    SystemUIGoogleOverlay
