@@ -95,23 +95,27 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Fresh_start.ogg
 
 # xd. Bootanimation
-ifeq ($(XDROID_BOOT_DARK),true)
-$(warning "xdroidUI: Using Dark xd. Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-else
-$(warning "xdroidUI: Using Light xd. Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-endif
+#ifeq ($(XDROID_BOOT_DARK),true)
+#$(warning "xdroidUI: Using Dark xd. Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#else
+#$(warning "xdroidUI: Using Light xd. Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#endif
 
 # xd. Bootanimation Indonesia Independence Day 76th
 # by Friction
-ifeq ($(XDROID_BOOT_76),true)
-$(warning "xdroidUI: Dirgahayu Indonesia | Forcing use Indonesia Independence Day 76th Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-endif
+#ifeq ($(XDROID_BOOT_76),true)
+#$(warning "xdroidUI: Dirgahayu Indonesia | Forcing use Indonesia Independence Day 76th Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#endif
+
+$(warning "xdroidUI: Pixel Dark Monet Bootanimation")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
 
 # xd. Fonts
 # arbutus-slab family
