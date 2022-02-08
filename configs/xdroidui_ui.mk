@@ -95,81 +95,49 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Fresh_start.ogg
 
 # xd. Bootanimation
-ifeq ($(XDROID_BOOT_DARK),true)
-$(warning "xdroidUI: Using Dark xd. Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-else
-$(warning "xdroidUI: Using Light xd. Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-endif
+#ifeq ($(XDROID_BOOT_DARK),true)
+#$(warning "xdroidUI: Using Dark xd. Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#else
+#$(warning "xdroidUI: Using Light xd. Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#endif
 
 # xd. Bootanimation Indonesia Independence Day 76th
 # by Friction
-ifeq ($(XDROID_BOOT_76),true)
-$(warning "xdroidUI: Dirgahayu Indonesia | Forcing use Indonesia Independence Day 76th Bootanimation")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#ifeq ($(XDROID_BOOT_76),true)
+#$(warning "xdroidUI: Dirgahayu Indonesia | Forcing use Indonesia Independence Day 76th Bootanimation")
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+#endif
+
+ifeq ($(PIXEL_BOOT),)
+$(error "xdroidUI: Please specify PIXEL_BOOT Resolution in xdroid_..mk, e.g PIXEL_BOOT := 1080")
+else
+ifeq ($(PIXEL_BOOT),720)
+$(warning "xdroidUI: Using Pixel Dark Bootanimation 720p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+endif
+ifeq ($(PIXEL_BOOT),1080)
+$(warning "xdroidUI: Using Pixel Dark Bootanimation 1080p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+endif
+ifeq ($(PIXEL_BOOT),1440)
+$(warning "xdroidUI: Using Pixel Dark Bootanimation 1440p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+endif
 endif
 
 # xd. Fonts
-# arbutus-slab family
-PRODUCT_PACKAGES += \
-    ArbutusSlab-Regular.ttf
-
-# google-sans family
+# Google Sans family
 PRODUCT_PACKAGES += \
     GoogleSans-Italic.ttf \
     GoogleSans-Regular.ttf
-
-# Lustria family
-PRODUCT_PACKAGES += \
-    Lustria-Regular.ttf
-
-# lato family
-PRODUCT_PACKAGES += \
-    Lato-BoldItalic.ttf \
-    Lato-Bold.ttf \
-    Lato-Italic.ttf \
-    Lato-MediumItalic.ttf \
-    Lato-Medium.ttf \
-    Lato-Regular.ttf
-
-# rubik family
-PRODUCT_PACKAGES += \
-    Rubik-BoldItalic.ttf \
-    Rubik-Bold.ttf \
-    Rubik-Italic.ttf \
-    Rubik-MediumItalic.ttf \
-    Rubik-Medium.ttf \
-    Rubik-Regular.ttf
-
-# zilla-slab family
-PRODUCT_PACKAGES += \
-    ZillaSlab-MediumItalic.ttf \
-    ZillaSlab-Medium.ttf \
-    ZillaSlab-SemiBoldItalic.ttf \
-    ZillaSlab-SemiBold.ttf
-
-# Karla family
-PRODUCT_PACKAGES += \
-    Karla-Regular.ttf
-
-# Fraunces family
-PRODUCT_PACKAGES += \
-    Fraunces-Regular.ttf \
-    Fraunces-SemiBold.ttf
-
-# BigShouldersText family
-PRODUCT_PACKAGES += \
-    BigShouldersText-Bold.ttf \
-    BigShouldersText-ExtraBold.ttf
-
-# Barlow family
-PRODUCT_PACKAGES += \
-    Barlow-Bold.ttf \
-    Barlow-Medium.ttf
 
 PRODUCT_COPY_FILES += \
     $(XDUI_PATH)/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
