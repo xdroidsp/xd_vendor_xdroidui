@@ -20,6 +20,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGE_OVERLAYS += \
     $(XDUI_PATH)/overlay/common
 
+# XDSettingsOverlay
+ifdef XDROID_MAINTAINER
+PRODUCT_PACKAGES += \
+    SettingsXDOverlay
+endif
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     FilesOverlay \
