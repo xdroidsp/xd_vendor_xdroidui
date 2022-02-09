@@ -95,41 +95,20 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Fresh_start.ogg
 
 # xd. Bootanimation
-#ifeq ($(XDROID_BOOT_DARK),true)
-#$(warning "xdroidUI: Using Dark xd. Bootanimation")
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-#else
-#$(warning "xdroidUI: Using Light xd. Bootanimation")
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_light.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-#endif
-
-# xd. Bootanimation Indonesia Independence Day 76th
-# by Friction
-#ifeq ($(XDROID_BOOT_76),true)
-#$(warning "xdroidUI: Dirgahayu Indonesia | Forcing use Indonesia Independence Day 76th Bootanimation")
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-#    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_ind-76.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
-#endif
-
-ifeq ($(PIXEL_BOOT),)
-$(error "xdroidUI: Please specify PIXEL_BOOT Resolution in xdroid_..mk, e.g PIXEL_BOOT := 1080")
+ifeq ($(XDROID_BOOT),)
+$(error "xdroidUI: Please specify Bootanim Resolution in xdroid_..mk, e.g XDROID_BOOT := 1080")
 else
-ifeq ($(PIXEL_BOOT),720)
-$(warning "xdroidUI: Using Pixel Dark Bootanimation 720p")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+ifeq ($(XDROID),720)
+$(warning "xdroidUI: Using xd. Dark Bootanimation 720p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
-ifeq ($(PIXEL_BOOT),1080)
-$(warning "xdroidUI: Using Pixel Dark Bootanimation 1080p")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+ifeq ($(XDROID_BOOT),1080)
+$(warning "xdroidUI: Using xd. Dark Bootanimation 1080p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
-ifeq ($(PIXEL_BOOT),1440)
-$(warning "xdroidUI: Using Pixel Dark Bootanimation 1440p")
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/pixel/pixel_dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
+ifeq ($(XDROID_BOOT),1440)
+$(warning "xdroidUI: Using xd. Dark Bootanimation 1440p")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_1440.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 endif
 
