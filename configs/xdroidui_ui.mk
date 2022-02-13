@@ -96,9 +96,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # xd. Bootanimation
 ifeq ($(XDROID_BOOT),)
-$(error "xdroidUI: Please specify Bootanim Resolution in xdroid_..mk, e.g XDROID_BOOT := 1080")
+$(warning "xdroidUI: Using xd. Dark Bootanimation legacy")
+    PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_legacy.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 else
-ifeq ($(XDROID),720)
+ifeq ($(XDROID_BOOT),720)
 $(warning "xdroidUI: Using xd. Dark Bootanimation 720p")
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
