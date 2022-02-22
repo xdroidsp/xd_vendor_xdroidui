@@ -15,7 +15,8 @@
 
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wallpapers_loc_request_suw=true
+    ro.wallpapers_loc_request_suw=true \
+    ro.support_one_handed_mode=true
 
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
