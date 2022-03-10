@@ -38,12 +38,9 @@ PRODUCT_PACKAGES += \
     GoogleWebViewOverlay \
     TelecomOverlay \
     CellBroadcastServiceOverlay \
-    SettingsGoogleOverlay \
-    SettingsGoogleOverlayPixel2021 \
     TelephonyProviderOverlay \
     ContactsProviderOverlay \
     PixelConfigOverlay2018 \
-    SettingsProviderOverlay \
     TraceurOverlay \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
@@ -53,7 +50,5 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayActiveEdge \
     PixelFwResOverlay \
     GoogleConfigOverlay \
-    SystemUIGoogleOverlay \
     CustomPixelLauncherOverlay \
-    XDSetupOverlay \
-    NavigationBarModeGesturalOverlayFS
+    XDSetupOverlay
