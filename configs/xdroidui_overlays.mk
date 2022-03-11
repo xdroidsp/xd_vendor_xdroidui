@@ -28,27 +28,20 @@ endif
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    FilesOverlay \
-    PixelDocumentsUIGoogleOverlay \
-    BuiltInPrintServiceOverlay \
-    GooglePermissionControllerOverlay \
-    PixelConfigOverlayCommon \
-    TeleServiceOverlay \
+    XDSetupOverlay \
+    CustomPixelLauncherOverlay \
     CaptivePortalLoginOverlay \
-    GoogleWebViewOverlay \
-    TelecomOverlay \
+    CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
-    TelephonyProviderOverlay \
-    ContactsProviderOverlay \
+    GoogleConfigOverlay \
+    GooglePermissionControllerOverlay \
+    GoogleWebViewOverlay \
+    ManagedProvisioningPixelOverlay \
+    NetworkStackOverlay \
     PixelConfigOverlay2018 \
-    TraceurOverlay \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
-    PixelConfigOverlay2021 \
-    PixelSetupWizardOverlay \
-    PixelSetupWizardOverlay2019 \
-    PixelSetupWizardOverlayActiveEdge \
-    PixelFwResOverlay \
-    GoogleConfigOverlay \
-    CustomPixelLauncherOverlay \
-    XDSetupOverlay
+    PixelConfigOverlayCommon \
+    PixelDocumentsUIGoogleOverlay \
+    PixelTetheringOverlay \
+    SystemUIGoogleOverlay
