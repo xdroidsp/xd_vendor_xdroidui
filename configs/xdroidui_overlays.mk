@@ -29,6 +29,7 @@ endif
 # RRO Overlays
 PRODUCT_PACKAGES += \
     FilesOverlay \
+    PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
     BuiltInPrintServiceOverlay \
     GooglePermissionControllerOverlay \
