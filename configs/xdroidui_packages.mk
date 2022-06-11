@@ -26,6 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GameSpace
 
+# EasterEgg
+PRODUCT_PACKAGES += \
+    kebeletEgg
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
