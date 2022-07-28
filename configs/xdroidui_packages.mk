@@ -26,9 +26,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GameSpace
 
-# EasterEgg
+# xdroid Additions
 PRODUCT_PACKAGES += \
-    kebeletEgg
+    kebeletEgg \
+    kebeletUpdate
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
