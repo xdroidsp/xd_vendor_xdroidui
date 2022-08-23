@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2021 \
     PixelSetupWizardOverlay \
     PixelSetupWizardOverlay2019 \
-    PixelSetupWizardOverlayActiveEdge \
+    PixelSetupWizardOverlay2021 \
     PixelFwResOverlay \
     GoogleConfigOverlay \
     SystemUIGoogleOverlay \
@@ -60,4 +60,6 @@ PRODUCT_PACKAGES += \
     XDSetupOverlay \
     NavigationBarModeGesturalOverlayFS \
     MediaProviderOverlay \
-    NoCombinedIconsOverlay
+    NoCombinedIconsOverlay \
+    StorageManagerGoogleOverlay \
+    FlipendoOverlay
