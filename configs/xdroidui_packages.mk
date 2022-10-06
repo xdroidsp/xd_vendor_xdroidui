@@ -28,8 +28,7 @@ PRODUCT_PACKAGES += \
 
 # xdroid Additions
 PRODUCT_PACKAGES += \
-    kebeletEgg \
-    kebeletUpdate
+    xdCore
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
