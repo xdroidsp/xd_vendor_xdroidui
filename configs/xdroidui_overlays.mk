@@ -59,4 +59,5 @@ PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay \
     XDSetupOverlay \
     NavigationBarModeGesturalOverlayFS \
-    MediaProviderOverlay
+    MediaProviderOverlay \
+    NoCombinedIconsOverlay
