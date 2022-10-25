@@ -28,6 +28,7 @@ endif
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    NetworkStackOverlay \
     FilesOverlay \
     PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
@@ -40,7 +41,7 @@ PRODUCT_PACKAGES += \
     TelecomOverlay \
     CellBroadcastServiceOverlay \
     SettingsGoogleOverlay \
-    SettingsGoogleOverlayPixel2021 \
+    SettingsGoogleOverlayPixel2022 \
     SettingsGoogleProviderOverlay \
     TelephonyProviderOverlay \
     ContactsProviderOverlay \
