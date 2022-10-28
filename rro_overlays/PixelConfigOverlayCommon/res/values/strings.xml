@@ -56,11 +56,4 @@
     <string name="config_systemTextIntelligence">com.google.android.as</string>
     <string name="config_systemUiIntelligence">com.google.android.as</string>
     <string name="config_systemVisualIntelligence">com.google.android.as</string>
-    <string name="config_ambientContextEventArrayExtraKey" translatable="false">EVENT_ARRAY</string>
-    <string name="config_ambientContextPackageNameExtraKey" translatable="false">PACKAGE_NAME</string>
-    <string name="config_defaultAmbientContextConsentComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.ambientcontext.ui.ConsentActivity</string>
-    <string name="config_defaultAmbientContextDetectionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService</string>
-    <string name="config_defaultWallpaperEffectsGenerationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.wallpapereffects.AiAiWallpaperEffectsGenerationService</string>
-    <string name="config_systemAppProtectionService" translatable="false">com.google.android.odad</string>
-    <string name="config_systemSupervision" translatable="false">com.google.android.gms.supervision</string>
 </resources>
