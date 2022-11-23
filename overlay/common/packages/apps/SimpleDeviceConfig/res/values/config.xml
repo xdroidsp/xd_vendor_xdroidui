@@ -55,6 +55,9 @@
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
+        <!-- Enable use of coarse/fine location -->
+        <item>privacy/location_accuracy_enabled=true</item>
+
         <!-- Keep up to 7 days of permission usage history -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
 
@@ -158,7 +161,6 @@
         <item>device_personalization_services/Overview__enable_proactive_hints=false</item>
         <item>device_personalization_services/Overview__enable_superpacks_pir_protocol=true</item>
         <item>device_personalization_services/Overview__min_lens_agsa_app_version=301084649</item>
-
         <!-- Disable federated learning -->
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_fa=false</item>
         <item>device_personalization_services/OverviewFederatedAnalytics__enable_min_training_interval=false</item>
