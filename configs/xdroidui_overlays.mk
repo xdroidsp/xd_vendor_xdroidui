@@ -63,4 +63,9 @@ PRODUCT_PACKAGES += \
     MediaProviderOverlay \
     NoCombinedIconsOverlay \
     StorageManagerGoogleOverlay \
-    FlipendoOverlay
+    FlipendoOverlay \
+    NoCombinedIconsOverlay
+
+# NexusLauncher resources
+PRODUCT_PACKAGES += \
+    NexusLauncherResOverlay
