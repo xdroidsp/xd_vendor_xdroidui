@@ -28,6 +28,7 @@ endif
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    NetworkStackOverlay \
     FilesOverlay \
     PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
@@ -40,7 +41,7 @@ PRODUCT_PACKAGES += \
     TelecomOverlay \
     CellBroadcastServiceOverlay \
     SettingsGoogleOverlay \
-    SettingsGoogleOverlayPixel2021 \
+    SettingsGoogleOverlayPixel2022 \
     SettingsGoogleProviderOverlay \
     TelephonyProviderOverlay \
     ContactsProviderOverlay \
@@ -51,8 +52,6 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlay2021 \
     PixelSetupWizardOverlay \
-    PixelSetupWizardOverlay2019 \
-    PixelSetupWizardOverlayActiveEdge \
     PixelFwResOverlay \
     GoogleConfigOverlay \
     SystemUIGoogleOverlay \
@@ -60,4 +59,11 @@ PRODUCT_PACKAGES += \
     XDSetupOverlay \
     NavigationBarModeGesturalOverlayFS \
     MediaProviderOverlay \
+    NoCombinedIconsOverlay \
+    StorageManagerGoogleOverlay \
+    FlipendoOverlay \
     NoCombinedIconsOverlay
+
+# NexusLauncher resources
+PRODUCT_PACKAGES += \
+    NexusLauncherResOverlay

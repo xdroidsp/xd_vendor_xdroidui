@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
+    SystemUIGoogle \
     NexusLauncherRelease
 
 # Filesystems tools
@@ -51,3 +51,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
 TARGET_SUPPORTS_QUICK_TAP ?= false
+
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv \
