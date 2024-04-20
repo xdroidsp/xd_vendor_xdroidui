@@ -1,0 +1,11 @@
+android_app_import {
+	name: "XDCore",
+	owner: "xdroidOSS",
+	apk: "XDCore.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+   privileged: true,
+   system_ext_specific: true,
+}
